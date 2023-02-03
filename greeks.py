@@ -27,7 +27,7 @@ T = 1         # Time to Maturity
 # Values
 
 log_returns = np.log(1+data.pct_change())
-Vol = log_returns.std()*252*0.5 # Historical volatily annualized
+Vol = log_returns.std()*252**0.5 # Historical volatily annualized  (**0.5 due to the fact that the volatility grows like this over the time)
 
 # Model
 
